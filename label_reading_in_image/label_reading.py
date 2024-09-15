@@ -11,7 +11,7 @@ def recText(filename):
     text = pytesseract.image_to_string(Image.open(filename))
     return text
 
-info = recText('TEST4.jpg')
+info = recText('TEST4.jpg')  #change the given image name(e.g. TEST4.jpg) to your respective name of the image
 print(info)
 
 with open("New.txt", "a") as file:
